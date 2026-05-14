@@ -1,0 +1,231 @@
+/* =========================
+   BODY
+========================= */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background: linear-gradient(to right, skyblue,skyblue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+    margin-top: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: white;
+    color: skyblue;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.container{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/71/Hirakud_Dam.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+/* =========================
+   MAIN SECTION
+========================= */
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+
+.card{
+    background-color: white;
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.card h2{
+    color:blue;
+    margin-bottom: 15px;
+}
+
+.card p{
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* =========================
+   LIST
+========================= */
+
+ul li,
+ol li{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #cc0000;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img{
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    background-color: white;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.gallery img{
+    margin: 15px;
+    width: 280px;
+    height: 180px;
+}
+
+/* =========================
+   VIDEO & MAP
+========================= */
+
+.video,
+.map{
+    background-color: white;
+    margin: 30px 0;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.video h2,
+.map h2{
+    color: #0066cc;
+}
+
+iframe{
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+    nav a{
+        display: inline-block;
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    .container h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
